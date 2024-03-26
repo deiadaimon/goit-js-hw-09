@@ -5,3 +5,46 @@
   |============================
 */
 @import url('./reset.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.gallery {
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  display: flex;
+}
+
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1.04);
+}
+
+h2 {
+  margin: 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: blanchedalmond;
+}
